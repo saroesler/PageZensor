@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-29 19:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/PageZensor/Handler/Edit.php:39
+#, php-format
+msgid "Page with id %s not found"
+msgstr ""
+
+#: lib/PageZensor/Version.php:15
+msgid "Page Zensor"
+msgstr ""
+
+#: lib/PageZensor/Version.php:16
+msgid ""
+"Page module with confirmation of every site by an administrator of the pages"
+msgstr ""
+
+#: lib/PageZensor/Version.php:17
+msgid "PageZensor"
+msgstr ""
+
+#: lib/PageZensor/Version.php:38
+msgid "pagezensor edit_page Hooks"
+msgstr ""
+
+#: lib/PageZensor/Api/Admin.php:17 lib/PageZensor/Api/Admin.php:18
+#: templates/Admin/Main.tpl:1
+msgid "Main"
+msgstr ""
+
+#: lib/PageZensor/Api/Admin.php:26 templates/Admin/page_manager.tpl:1
+msgid "Page Manager"
+msgstr ""
+
+#: lib/PageZensor/Api/Admin.php:27
+msgid "Add and delete pages"
+msgstr ""
+
+#: lib/PageZensor/Api/Admin.php:34
+msgid "Little HTLM- School"
+msgstr ""
+
+#: lib/PageZensor/Api/Admin.php:35
+msgid "Learn HTML, to edit pages professionally"
+msgstr ""
+
+#: lib/PageZensor/Api/Admin.php:41 lib/PageZensor/Api/Admin.php:42
+#: templates/Admin/help.tpl:1 templates/Admin/help.tpl:2
+msgid "Help"
+msgstr ""
+
+#: lib/PageZensor/Api/Account.php:49
+msgid "Page creation"
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:206
+msgid "The added Page has no title."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:229
+msgid "page has been added successfully."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:236
+msgid "ID is missing."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:243
+msgid "page has been removed successfully."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:376
+msgid "Please write the editor something about his problems."
+msgstr ""
+
+#: templates/Admin/display_page_edit.tpl:1
+msgid "Edit Display"
+msgstr ""
+
+#: templates/Admin/display_page_edit.tpl:3
+#: templates/Admin/display_page_refuse.tpl:4
+msgid "Last change:"
+msgstr ""
+
+#: templates/Admin/display_page_edit.tpl:7
+#: templates/Admin/display_page_refuse.tpl:8
+msgid "The Editor wrote about his changes:"
+msgstr ""
+
+#: templates/Admin/display_page_edit.tpl:13
+#: templates/Admin/display_page_refuse.tpl:14
+msgid "The changes couldn't published because of this:"
+msgstr ""
+
+#: templates/Admin/display_page_edit.tpl:18 templates/Admin/Main.tpl:51
+#: templates/Admin/Main.tpl:79 templates/Admin/Main.tpl:106
+#: templates/User/display_page.tpl:11
+msgid "Edit"
+msgstr ""
+
+#: templates/Admin/display_page_edit.tpl:21
+msgid "Confirm"
+msgstr ""
+
+#: templates/Admin/display_page_edit.tpl:22
+msgid "Refuse"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:3
+msgid "Little HTML- School"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:5
+msgid ""
+"This modul work with HTML- Tags. To write a text in a right format, you have "
+"to use HTML. Here is a schor overview of the general HTML-Tags."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:8
+msgid "Title:"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:8
+msgid ""
+"There is a hierarchy of titles. You can use highest title by writing '&lt;"
+"h1>'Here is my text'&lt;/h1>'. Lower title are created with &lt;h2> and so "
+"on."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:9
+msgid "Text:"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:9
+msgid ""
+"To write your text HTML- comformely you have to use a &lt;p> Tag. You use it "
+"like this:'&lt;p>My Text&lt;/p>'"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:10
+msgid "Wordwrap"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:10
+msgid "To get an new Line you have to use this tag: '&lt;br/>'."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:11
+msgid "Design a text"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:11
+msgid "To design the text, you can use following Tags:"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:13
+msgid "Bold"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:13
+msgid "To make your text boldly, you use this tag:'&lt;b>Bold Text&lt;/b>'"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:14
+msgid "Italic"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:14
+msgid "To make your text italicly, you use this tag:'&lt;i>Italic Text&lt;/i>'"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:15
+msgid "Underline"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:15
+msgid "To unterline your text, you use this tag:'&lt;u>Underlied Text&lt;/u>'"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:17
+msgid "Structure a text"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:17
+msgid "To structure the text, you can use following Tags:"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:19
+msgid "List with dots"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:19
+msgid ""
+"To create a list with dots you can use this tag:'&lt;ul>&lt;li>Text in "
+"list&lt;/li>&lt;/ul>'. To create more then one list entry you use the &lt;"
+"li> tags more the one time."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:20
+msgid "List with numbering"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:20
+msgid ""
+"To create a list with numbering you can use this tag:'&lt;ol>&lt;li>Text in "
+"list&lt;/li>&lt;/ol>'. To create more then one list entry you use the &lt;"
+"li> tags more the one time."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:21
+msgid "Table"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:21
+msgid ""
+"To create a table you can use this tag:'&lt;table>&lt;tr>&lt;th>Title of th "
+"column&lt;/th>&lt;td>Text in one cell&lt;/td>&lt;/tr>&lt;/table>'. To create "
+"more then one row you use the &lt;tr> tags more the one time. To create more "
+"then one column you use the &lt;th> / &lt;td> tags more the one time in each "
+"row."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:22
+msgid "Deviding line"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:22
+msgid "To create a deviding line you use this tag: '&lt;hr/>'."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:24
+msgid "Hyperlink"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:24
+msgid ""
+"To create a hyperlink you use this tag: &lt;a href=\"path to the site\">the "
+"title, you show the sites visitor&lt;/a>"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:25
+msgid "Picture"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:25
+msgid ""
+"To include an picturein your site, you do it like this: &lt;p>&lt;img src="
+"\"path to the picture on the server\" alt=\"The text is shown, if the "
+"picture couldn't display\"/>&lt;/p> To use a picture contact the "
+"administrantor, please. Only he can upload the picture to the server and "
+"input the right path."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:26
+msgid "Style/ Layout:"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:26
+msgid ""
+"To make a better layout, you can use css tags. To include css- tags you use "
+"the style- argument: style=\"css-tag\" in a HTLM- tag. It is only "
+"recommended for user knowing what they do."
+msgstr ""
+
+#: templates/Admin/html_school.tpl:27
+msgid "More Informations"
+msgstr ""
+
+#: templates/Admin/html_school.tpl:27
+msgid "SelfHTML is a good HTML-school for more informations"
+msgstr ""
+
+#: templates/Admin/display_page_refuse.tpl:1
+msgid "Refuse Manager"
+msgstr ""
+
+#: templates/Admin/display_page_refuse.tpl:2
+msgid "You want to refuse this changes of the page"
+msgstr ""
+
+#: templates/Admin/display_page_refuse.tpl:23
+msgid "Send refuse"
+msgstr ""
+
+#: templates/Admin/display_page_refuse.tpl:24
+msgid "Cancel refuse"
+msgstr ""
+
+#: templates/Admin/Main.tpl:8
+msgid "Changes"
+msgstr ""
+
+#: templates/Admin/Main.tpl:13 templates/Admin/Main.tpl:39
+#: templates/Admin/Main.tpl:67 templates/Admin/Main.tpl:94
+#: templates/Admin/Main.tpl:118 templates/Admin/edit.tpl:7
+#: templates/Admin/page_manager.tpl:8
+msgid "Title"
+msgstr ""
+
+#: templates/Admin/Main.tpl:14 templates/Admin/Main.tpl:40
+#: templates/Admin/Main.tpl:68 templates/Admin/Main.tpl:95
+#: templates/Admin/Main.tpl:119 templates/Admin/page_manager.tpl:9
+msgid "Date"
+msgstr ""
+
+#: templates/Admin/Main.tpl:22 templates/Admin/Main.tpl:49
+#: templates/Admin/Main.tpl:77 templates/Admin/Main.tpl:104
+msgid "Display Edit"
+msgstr ""
+
+#: templates/Admin/Main.tpl:28
+msgid "No changes to confirm"
+msgstr ""
+
+#: templates/Admin/Main.tpl:34
+msgid "Refused pages"
+msgstr ""
+
+#: templates/Admin/Main.tpl:50 templates/Admin/Main.tpl:78
+#: templates/Admin/Main.tpl:105 templates/Admin/Main.tpl:128
+msgid "Display View"
+msgstr ""
+
+#: templates/Admin/Main.tpl:57
+msgid "No refused page"
+msgstr ""
+
+#: templates/Admin/Main.tpl:62
+msgid "pending changes"
+msgstr ""
+
+#: templates/Admin/Main.tpl:85
+msgid "No pending changes"
+msgstr ""
+
+#: templates/Admin/Main.tpl:90
+msgid "My pages"
+msgstr ""
+
+#: templates/Admin/Main.tpl:114
+msgid "Other pages"
+msgstr ""
+
+#: templates/Admin/edit.tpl:1
+msgid "Editor"
+msgstr ""
+
+#: templates/Admin/edit.tpl:4
+msgid "Page information"
+msgstr ""
+
+#: templates/Admin/edit.tpl:12
+msgid "Content"
+msgstr ""
+
+#: templates/Admin/edit.tpl:18
+msgid "little html - school"
+msgstr ""
+
+#: templates/Admin/edit.tpl:21
+msgid "What has changed?"
+msgstr ""
+
+#: templates/Admin/edit.tpl:25
+msgid "criticism"
+msgstr ""
+
+#: templates/Admin/edit.tpl:29
+msgid "Save"
+msgstr ""
+
+#: templates/Admin/edit.tpl:30
+msgid "Cancel"
+msgstr ""
+
+#: templates/Admin/page_manager.tpl:7
+msgid "ID"
+msgstr ""
+
+#: templates/Admin/page_manager.tpl:22 templates/Admin/page_manager.tpl:25
+msgid "Mainpage"
+msgstr ""
+
+#: templates/Admin/help.tpl:3
+msgid ""
+"Here you can find help about this zikula module. The main idea of this modul "
+"is to make a manager of many sites with an admin adding sites, many editors, "
+"writing things on the sites and few confirmator, watching if the changes are "
+"okay."
+msgstr ""
+
+#: templates/Admin/help.tpl:5
+msgid "Permissions"
+msgstr ""
+
+#: templates/Admin/help.tpl:6
+msgid ""
+"The administrator, adding and deleating sites has to get the Admin- Access "
+"for the Page- Zensor module. The Permissionrule shows like this: Group: The "
+"Group of Administrators, Component:\"PageZensor::\", Instance:\"::\", "
+"Permission level: \"Admin access\""
+msgstr ""
+
+#: templates/Admin/help.tpl:8
+msgid ""
+"The editor, eding sites has to get the Moderate- Access for the Page- Zensor "
+"module. The Permissionrule shows like this: Group: The Group of Editors for "
+"one or a group of sites, Component:\"PageZensor::(1|2)\", Instance:\"::\", "
+"Permission level: \"Moderate access\" (In this case the group can edit page "
+"1 and page 2.). To set the edit-access for the pages, you have to put in the "
+"clip the page-id, finding in the pagemanager"
+msgstr ""
+
+#: templates/Admin/help.tpl:10
+msgid ""
+"The confirmator, confirming changes has to get the Edit- Access for the "
+"Page- Zensor module. The Permissionrule shows like this: Group: The Group of "
+"confirmators, Component:\"PageZensor::\", Instance:\"::\", Permission level: "
+"\"Edit access\""
+msgstr ""
+
+#: templates/Admin/help.tpl:12
+msgid "Operation"
+msgstr ""
+
+#: templates/Admin/help.tpl:13
+msgid ""
+"The Administrator can use the pagemanger zu create new pages by putting in a "
+"title and klicking on the green tik or to delete pages by using the rubbish."
+msgstr ""
+
+#: templates/Admin/help.tpl:15
+msgid ""
+"The Editor can edit his pages by using the edit button on the main site in "
+"the category \"my pages\". To explain, what has been changed, there is the "
+"field with the title \"What has changed?\". Display edit shows the new site, "
+"even if it isn't confirmed. The Display shows the last confirmed site. The "
+"Mainpage show, which changes are pending, and whitch changes are remarked. "
+msgstr ""
+
+#: templates/Admin/help.tpl:17
+msgid ""
+"The Confirmator use the edit view on the category \"changes\". In the "
+"opening view he can decide, if the changes, are ok, or not. If they aren't, "
+"he writes down, what isn't ok, to send the editor his remarks."
+msgstr ""
+
+#: templates/Admin/help.tpl:19
+msgid "Startmodule"
+msgstr ""
+
+#: templates/Admin/help.tpl:20
+msgid ""
+"To get this module as startmodule, you have to set \"PageZensor\" as "
+"startmodule. The type is \"user\" and the func is \"main\". You choose the "
+"page by choosing this page as \"Mainpage\" in the \"Page Manager\""
+msgstr ""
+
+#: templates/User/display_all.tpl:1
+msgid "All pages"
+msgstr ""
+
+#: templates/User/display_page.tpl:5
+msgid "Admin page"
+msgstr ""
+
+#: templates/User/display_page.tpl:8
+msgid "Last update:"
+msgstr ""
+
+#: templates/User/display_page.tpl:14
+msgid "Could not find a site with this id!"
+msgstr ""
