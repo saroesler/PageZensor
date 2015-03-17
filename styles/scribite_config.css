@@ -1,0 +1,11 @@
+/*In this file we set following CKEditor menus to display none:
+cke_58: Styles
+cke_61: Font
+cke_62: Size
+cke_63: colors
+*/
+
+
+#cke_58, #cke_61, #cke_62, #cke_63{
+display:none;
+}

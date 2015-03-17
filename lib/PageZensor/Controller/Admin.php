@@ -98,7 +98,7 @@ class PageZensor_Controller_Admin extends Zikula_AbstractController
 			}
 			
 		//divide all pages in pages, the user is allowed to write and pages the user is only allowed to read
-    	$pages = $this->entityManager->getRepository('PageZensor_Entity_PageZenDisplay')->findBy(array());
+    	$pages = $this->entityManager->getRepository('PageZensor_Entity_PageZenDisplay')->findBy(array(),array('title'=>'ASC'));
     	$mypage= array();
 		$otherpage= array();
     	foreach($pages as $page)
@@ -231,16 +231,7 @@ class PageZensor_Controller_Admin extends Zikula_AbstractController
 			
 			//deleate a page 
 		case 'del':
-			$actionid = FormUtil::getPassedValue('id',null,'POST');
-			if( $actionid=="")
-				return LogUtil::RegisterError($this->__("ID is missing."), null, ModUtil::url($this->name, 'admin','pagemanager'));
-			$pageedit = $this->entityManager->find('PageZensor_Entity_PageZenEdit', $actionid);
-			$pagedisplay = $this->entityManager->find('PageZensor_Entity_PageZenDisplay', $actionid);
 			
-			$this->entityManager->remove($pageedit);
-			$this->entityManager->remove($pagedisplay);
-			$this->entityManager->flush();
-			LogUtil::RegisterStatus($this->__("page has been removed successfully."));
 			break;
 			
 			//set a page to the mainpage		
@@ -258,6 +249,35 @@ class PageZensor_Controller_Admin extends Zikula_AbstractController
     	$this->redirect(ModUtil::url($this->name, 'admin', 'pagemanager'));
     } 
     
+    public function del_request()
+    {
+    	if (!SecurityUtil::checkPermission('PageZensor::', '::', ACCESS_ADMIN)) {
+    	    return LogUtil::registerPermissionError();
+    	}
+    	$actionid = FormUtil::getPassedValue('id',null,'GET');
+    	$page = $this->entityManager->find('PageZensor_Entity_PageZenEdit', $actionid);
+     	return $this->view
+     	->assign('page',$page)
+		->fetch('Admin/del_request.tpl');
+    }
+    
+    public function delete()
+    {
+    if (!SecurityUtil::checkPermission('PageZensor::', '::', ACCESS_ADMIN)) {
+    	return LogUtil::registerPermissionError();
+	}
+    $actionid = FormUtil::getPassedValue('id',null,'GET');
+	if( $actionid=="")
+		return LogUtil::RegisterError($this->__("ID is missing."), null, ModUtil::url($this->name, 'admin','pagemanager'));
+	$pageedit = $this->entityManager->find('PageZensor_Entity_PageZenEdit', $actionid);
+	$pagedisplay = $this->entityManager->find('PageZensor_Entity_PageZenDisplay', $actionid);
+	
+	$this->entityManager->remove($pageedit);
+	$this->entityManager->remove($pagedisplay);
+	$this->entityManager->flush();
+	LogUtil::RegisterStatus($this->__("page has been removed successfully."));
+	$this->redirect(ModUtil::url($this->name, 'admin', 'pagemanager'));
+    }
      /**
      * @brief edit function.
      * @throws Zikula_Forbidden If not ACCESS_MODERATE
@@ -290,8 +310,11 @@ class PageZensor_Controller_Admin extends Zikula_AbstractController
 			if($pid!=0)
 			{
 				$page = $this->entityManager->find('PageZensor_Entity_PageZenEdit', $pid);
+				$uid = $page->getuid_edit();
+				$user = UserUtil::getPNUser($uid);
 				$permission="PageZensor::".$pid;
 				return $this->view
+				->assign('user', $user)
 				->assign('page',$page)
 				->fetch('Admin/display_page_edit.tpl');
 			}
@@ -396,6 +419,32 @@ class PageZensor_Controller_Admin extends Zikula_AbstractController
 
     }
     
+    public function history()
+    {
+    	
+    	$datas = $this->entityManager->getRepository('PageZensor_Entity_PageZenEdit')->findBy(array(),array('editdate'=>'DESC'));
+    	
+    	$today = new DateTime();
+    	
+    	$week = array();
+    	$month = array();
+    	
+    	foreach($datas as $data)
+    	{
+    		$dif  = $data->getEditdate()->diff($today);
+    		$difnum = $dif->format('%a');
+    		if($difnum <= 7)
+    			$week[] = $data;
+    		if($difnum <= 30)
+    			$month[] = $data;
+    	}
+    	return $this->view
+    		->assign('week', $week)
+    		->assign('month', $month)
+    		->assign('datas', $datas)
+    		->fetch('Admin/history.tpl');
+    }
+    
      /**
      * @brief Html- school in edit function.
      * @throws 
@@ -429,6 +478,47 @@ class PageZensor_Controller_Admin extends Zikula_AbstractController
     {
     	return $this->view
 		->fetch('Admin/help.tpl');
+    }
+    
+    /**
+    * @copy the comfirmed Text into the edit text
+    *
+    **/
+    
+    public function ResetConfirm()
+    {
+    	if (!SecurityUtil::checkPermission('PageZensor::'.$pid, '::', ACCESS_MODERATE)) {
+    	    return LogUtil::registerPermissionError();
+    	}
+    	
+    	$pid = FormUtil::getPassedValue('pid', NULL, 'GET');
+    	
+    	if(!$pid)
+		{
+			LogUtil::RegisterError($this->__("There is no valid $pid"));
+			$this->redirect(ModUtil::url($this->name, 'admin', 'main'));
+		}
+    	
+    	//get database
+    	$page_display = $this->entityManager->find('PageZensor_Entity_PageZenDisplay', $pid);
+		$page_edit = $this->entityManager->find('PageZensor_Entity_PageZenEdit', $pid);
+		
+		//reset change info
+		$page_edit->setrefuse_comment("");
+		$page_edit->setedit_comment("");
+		$page_edit->setedit_flag(0);
+		
+		$uid = SessionUtil::getVar('uid');
+		Loader::loadClass('UserUtil');
+		
+		$page_edit->settext($page_display->gettext());
+		$page_display->seteditdate(date("Y-m-d H:i:s"));
+		$page_display->setuid_edit($uid);
+
+		$this->entityManager->persist($page_edit);
+		$this->entityManager->flush();
+		
+    	$this->redirect(ModUtil::url($this->name, 'admin', 'main'));
     }
 }
 

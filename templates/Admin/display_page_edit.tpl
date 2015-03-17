@@ -1,10 +1,13 @@
 {include file='Admin/Header.tpl' __title='Edit Display' icon='display'}
-<p>{$page->gettext()}</p>
+{$page->gettext()|notifyfilters:'pagezensor.filter_hooks.users_view'}
+<br />
+<br />
+<br />
 <p>{gt text="Last change:"} {$page->geteditdateFormatted()}</p>
 
 <br/><br/>
 {if $page.edit_comment}
-	<h3>{gt text="The Editor wrote about his changes:"}</h3>
+	<h3>{$user.uname} {gt text="wrote about his changes:"}</h3>
 	<p>{$page.edit_comment}</p>
 <br/><br/>
 {/if}

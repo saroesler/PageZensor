@@ -26,5 +26,5 @@
 	<li><b>{gt text="Style/ Layout:"}</b> {gt text="To make a better layout, you can use css tags. To include css- tags you use the style- argument: style=\"css-tag\" in a HTLM- tag. It is only recommended for user knowing what they do."}</li>
 	<li><b>{gt text="More Informations"}</b> <a href="http://de.selfhtml.org">{gt text="SelfHTML is a good HTML-school for more informations"}</a> 
 </ol> 
-<p><b>{gt text="Please think about Privacy Policy and copyright!"</b></p>
+<p><b>{gt text="Please think about Privacy Policy and copyright!"}</b></p>
 <br/>

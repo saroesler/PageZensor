@@ -79,7 +79,8 @@ class PageZensor_Handler_Edit extends Zikula_Form_AbstractHandler
         // merge user and save everything
         $this->page->merge($data);
         $this->page->seteditdate(date("Y-m-d H:i:s"));
-        $this->page->setuid_edit($uid);
+        if($args['commandName'] == 'save')
+        	$this->page->setuid_edit($uid);
        // $this->page->setedit_comment($uid);
         $this->page->setedit_flag(1);
         $this->entityManager->persist($this->page);

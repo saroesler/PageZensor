@@ -19,6 +19,12 @@ class PageZensor_Api_Admin extends Zikula_AbstractApi
 			'class' => 'z-icon-es-config',
 		);
 		
+		$links[] = array(
+			'url'=> ModUtil::url('PageZensor', 'admin', 'history'),
+			'text'  => $this->__('History'),
+			'title' => $this->__('History'),
+			'class' => 'z-icon-es-cubes',
+		);
 		
 		if (SecurityUtil::checkPermission('PageZensor::', '::', ACCESS_ADMIN)) {
 			$links[] = array(

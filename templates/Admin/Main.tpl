@@ -17,7 +17,7 @@
 					</thead>
 					<tbody>
 						{foreach from=$changes item='change'}
-							<tr><td><a  href="{modurl modname='page_Zensor' type='user' func='display' pid=$change.pid}">{$change.title} {$change.date}</a></td>
+							<tr><td><a  href="{modurl modname='PageZensor' type='user' func='display' pid=$change.pid}">{$change.title} {$change.date}</a></td>
 								<td>{$change.editdate->format('d.m.Y H:i')}</td>
 								 <td><button onclick="document.getElementById('action').value = 'display_edit'; document.getElementById('id').value = {$change.pid};">{img src='demo.png' modname='core' set='icons/extrasmall'}{gt text="Display Edit"}</button></a></td>
 							</tr>
@@ -43,7 +43,7 @@
 				</thead>
 				<tbody>
 					{foreach from=$myrefuses item='myrefuse'}
-						<tr><td><a  href="{modurl modname='page_Zensor' type='user' func='display' pid=$mypage.pid}">{$myrefuse.title}</a></td>
+						<tr><td><a  href="{modurl modname='PageZensor' type='user' func='display' pid=$mypage.pid}">{$myrefuse.title}</a></td>
 							<td>{$myrefuse.date}</td>
 							<td>
 							<button onclick="document.getElementById('action').value = 'display_edit'; document.getElementById('id').value = {$myrefuse.pid};">{img src='demo.png' modname='core' set='icons/extrasmall'}{gt text="Display Edit"}</button>
@@ -71,7 +71,7 @@
 				</thead>
 				<tbody>
 					{foreach from=$mychanges item='mychange'}
-						<tr><td><a  href="{modurl modname='page_Zensor' type='user' func='display' pid=$mypage.pid}">{$mychange.title}</a></td>
+						<tr><td><a  href="{modurl modname='PageZensor' type='user' func='display' pid=$mypage.pid}">{$mychange.title}</a></td>
 							<td>{$mychange.date}</td>
 							<td>
 							<button onclick="document.getElementById('action').value = 'display_edit'; document.getElementById('id').value = {$mychange.pid};">{img src='demo.png' modname='core' set='icons/extrasmall'}{gt text="Display Edit"}</button>
@@ -98,7 +98,7 @@
 			</thead>
 			<tbody>
 				{foreach from=$mypages item='mypage'}
-					<tr><td><a  href="{modurl modname='page_Zensor' type='user' func='display' pid=$mypage.pid}">{$mypage.title}</a></td>
+					<tr><td><a  href="{modurl modname='PageZensor' type='user' func='display' pid=$mypage.pid}">{$mypage.title}</a></td>
 						<td>{$mypage.date}</td>
 						<td>
 						<button onclick="document.getElementById('action').value = 'display_edit'; document.getElementById('id').value = {$mypage.pid};">{img src='demo.png' modname='core' set='icons/extrasmall'}{gt text="Display Edit"}</button>
@@ -123,7 +123,7 @@
 			<tbody>
 				{foreach from=$otherpages item='otherpage'}
 					<tr>
-					<td><a  href="{modurl modname='page_Zensor' type='user' func='display' pid=$otherpage.pid}">{$otherpage.title}</a></td>
+					<td><a  href="{modurl modname='PageZensor' type='user' func='display' pid=$otherpage.pid}">{$otherpage.title}</a></td>
 					<td>{$otherpage.date}</td>
 					<td><button onclick="document.getElementById('action').value = 'display_view'; document.getElementById('id').value = {$otherpage.pid};">{img src='14_layer_visible.png' modname='core' set='icons/extrasmall'}{gt text="Display View"}</button></a></td>
 					</tr>

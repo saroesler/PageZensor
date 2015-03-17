@@ -6,19 +6,39 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Zikula 1.x\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-29 19:28+0000\n"
+"POT-Creation-Date: 2014-10-06 22:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: lib/PageZensor/Controller/Admin.php:206
+msgid "The added Page has no title."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:229
+msgid "page has been added successfully."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:271
+msgid "ID is missing."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:278
+msgid "page has been removed successfully."
+msgstr ""
+
+#: lib/PageZensor/Controller/Admin.php:399
+msgid "Please write the editor something about his problems."
+msgstr ""
+
 #: lib/PageZensor/Handler/Edit.php:39
-#, php-format
+#, possible-php-format
 msgid "Page with id %s not found"
 msgstr ""
 
@@ -39,87 +59,64 @@ msgstr ""
 msgid "pagezensor edit_page Hooks"
 msgstr ""
 
-#: lib/PageZensor/Api/Admin.php:17 lib/PageZensor/Api/Admin.php:18
-#: templates/Admin/Main.tpl:1
-msgid "Main"
-msgstr ""
-
-#: lib/PageZensor/Api/Admin.php:26 templates/Admin/page_manager.tpl:1
-msgid "Page Manager"
-msgstr ""
-
-#: lib/PageZensor/Api/Admin.php:27
-msgid "Add and delete pages"
-msgstr ""
-
-#: lib/PageZensor/Api/Admin.php:34
-msgid "Little HTLM- School"
-msgstr ""
-
-#: lib/PageZensor/Api/Admin.php:35
-msgid "Learn HTML, to edit pages professionally"
-msgstr ""
-
-#: lib/PageZensor/Api/Admin.php:41 lib/PageZensor/Api/Admin.php:42
-#: templates/Admin/help.tpl:1 templates/Admin/help.tpl:2
-msgid "Help"
+#: lib/PageZensor/Version.php:42
+msgid "Users view"
 msgstr ""
 
 #: lib/PageZensor/Api/Account.php:49
 msgid "Page creation"
 msgstr ""
 
-#: lib/PageZensor/Controller/Admin.php:206
-msgid "The added Page has no title."
+#: lib/PageZensor/Api/Admin.php:17 lib/PageZensor/Api/Admin.php:18
+#: templates/Admin/Main.tpl:1 templates/Admin/history.tpl:1
+msgid "Main"
 msgstr ""
 
-#: lib/PageZensor/Controller/Admin.php:229
-msgid "page has been added successfully."
+#: lib/PageZensor/Api/Admin.php:24 lib/PageZensor/Api/Admin.php:25
+msgid "History"
 msgstr ""
 
-#: lib/PageZensor/Controller/Admin.php:236
-msgid "ID is missing."
+#: lib/PageZensor/Api/Admin.php:32 templates/Admin/page_manager.tpl:9
+msgid "Page Manager"
 msgstr ""
 
-#: lib/PageZensor/Controller/Admin.php:243
-msgid "page has been removed successfully."
+#: lib/PageZensor/Api/Admin.php:33
+msgid "Add and delete pages"
 msgstr ""
 
-#: lib/PageZensor/Controller/Admin.php:376
-msgid "Please write the editor something about his problems."
+#: lib/PageZensor/Api/Admin.php:40
+msgid "Little HTLM- School"
 msgstr ""
 
-#: templates/Admin/display_page_edit.tpl:1
-msgid "Edit Display"
+#: lib/PageZensor/Api/Admin.php:41
+msgid "Learn HTML, to edit pages professionally"
 msgstr ""
 
-#: templates/Admin/display_page_edit.tpl:3
-#: templates/Admin/display_page_refuse.tpl:4
-msgid "Last change:"
+#: lib/PageZensor/Api/Admin.php:47 lib/PageZensor/Api/Admin.php:48
+#: templates/Admin/help.tpl:1 templates/Admin/help.tpl:2
+msgid "Help"
 msgstr ""
 
-#: templates/Admin/display_page_edit.tpl:7
-#: templates/Admin/display_page_refuse.tpl:8
-msgid "The Editor wrote about his changes:"
+#: templates/User/display_page.tpl:5
+msgid "Admin page"
 msgstr ""
 
-#: templates/Admin/display_page_edit.tpl:13
-#: templates/Admin/display_page_refuse.tpl:14
-msgid "The changes couldn't published because of this:"
-msgstr ""
-
-#: templates/Admin/display_page_edit.tpl:18 templates/Admin/Main.tpl:51
-#: templates/Admin/Main.tpl:79 templates/Admin/Main.tpl:106
 #: templates/User/display_page.tpl:11
+msgid "Last update:"
+msgstr ""
+
+#: templates/User/display_page.tpl:15 templates/Admin/Main.tpl:51
+#: templates/Admin/Main.tpl:79 templates/Admin/Main.tpl:106
+#: templates/Admin/display_page_edit.tpl:21
 msgid "Edit"
 msgstr ""
 
-#: templates/Admin/display_page_edit.tpl:21
-msgid "Confirm"
+#: templates/User/display_page.tpl:18
+msgid "Could not find a site with this id!"
 msgstr ""
 
-#: templates/Admin/display_page_edit.tpl:22
-msgid "Refuse"
+#: templates/User/display_all.tpl:1 templates/Admin/history.tpl:18
+msgid "All pages"
 msgstr ""
 
 #: templates/Admin/html_school.tpl:3
@@ -286,12 +283,78 @@ msgstr ""
 msgid "SelfHTML is a good HTML-school for more informations"
 msgstr ""
 
+#: templates/Admin/html_school.tpl:29
+msgid "Please think about Privacy Policy and copyright!"
+msgstr ""
+
+#: templates/Admin/edit.tpl:6
+msgid "Editor"
+msgstr ""
+
+#: templates/Admin/edit.tpl:10
+msgid "Page information"
+msgstr ""
+
+#: templates/Admin/edit.tpl:13 templates/Admin/Main.tpl:13
+#: templates/Admin/Main.tpl:39 templates/Admin/Main.tpl:67
+#: templates/Admin/Main.tpl:94 templates/Admin/Main.tpl:118
+#: templates/Admin/history.tpl:27 templates/Admin/history.tpl:52
+#: templates/Admin/history.tpl:77 templates/Admin/page_manager.tpl:16
+msgid "Title"
+msgstr ""
+
+#: templates/Admin/edit.tpl:18
+msgid "Content"
+msgstr ""
+
+#: templates/Admin/edit.tpl:24
+msgid "little html - school"
+msgstr ""
+
+#: templates/Admin/edit.tpl:27
+msgid "What has changed?"
+msgstr ""
+
+#: templates/Admin/edit.tpl:31
+msgid "criticism"
+msgstr ""
+
+#: templates/Admin/edit.tpl:35
+msgid "Save"
+msgstr ""
+
+#: templates/Admin/edit.tpl:37
+msgid "Save redactionaly"
+msgstr ""
+
+#: templates/Admin/edit.tpl:39 templates/Admin/del_request.tpl:14
+msgid "Cancel"
+msgstr ""
+
+#: templates/Admin/edit.tpl:41
+msgid "Reset to confirming"
+msgstr ""
+
 #: templates/Admin/display_page_refuse.tpl:1
 msgid "Refuse Manager"
 msgstr ""
 
 #: templates/Admin/display_page_refuse.tpl:2
 msgid "You want to refuse this changes of the page"
+msgstr ""
+
+#: templates/Admin/display_page_refuse.tpl:4
+#: templates/Admin/display_page_edit.tpl:6
+msgid "Last change:"
+msgstr ""
+
+#: templates/Admin/display_page_refuse.tpl:8
+msgid "The Editor wrote about his changes:"
+msgstr ""
+
+#: templates/Admin/display_page_refuse.tpl:14
+#: templates/Admin/display_page_edit.tpl:16
+msgid "The changes couldn't published because of this:"
 msgstr ""
 
 #: templates/Admin/display_page_refuse.tpl:23
@@ -302,25 +365,22 @@ msgstr ""
 msgid "Cancel refuse"
 msgstr ""
 
-#: templates/Admin/Main.tpl:8
+#: templates/Admin/Main.tpl:8 templates/Admin/history.tpl:72
 msgid "Changes"
-msgstr ""
-
-#: templates/Admin/Main.tpl:13 templates/Admin/Main.tpl:39
-#: templates/Admin/Main.tpl:67 templates/Admin/Main.tpl:94
-#: templates/Admin/Main.tpl:118 templates/Admin/edit.tpl:7
-#: templates/Admin/page_manager.tpl:8
-msgid "Title"
 msgstr ""
 
 #: templates/Admin/Main.tpl:14 templates/Admin/Main.tpl:40
 #: templates/Admin/Main.tpl:68 templates/Admin/Main.tpl:95
-#: templates/Admin/Main.tpl:119 templates/Admin/page_manager.tpl:9
+#: templates/Admin/Main.tpl:119 templates/Admin/history.tpl:28
+#: templates/Admin/history.tpl:53 templates/Admin/history.tpl:78
+#: templates/Admin/page_manager.tpl:17
 msgid "Date"
 msgstr ""
 
 #: templates/Admin/Main.tpl:22 templates/Admin/Main.tpl:49
 #: templates/Admin/Main.tpl:77 templates/Admin/Main.tpl:104
+#: templates/Admin/history.tpl:36 templates/Admin/history.tpl:61
+#: templates/Admin/history.tpl:86
 msgid "Display Edit"
 msgstr ""
 
@@ -357,47 +417,43 @@ msgstr ""
 msgid "Other pages"
 msgstr ""
 
-#: templates/Admin/edit.tpl:1
-msgid "Editor"
+#: templates/Admin/history.tpl:16 templates/Admin/history.tpl:22
+msgid "Last 7 days"
 msgstr ""
 
-#: templates/Admin/edit.tpl:4
-msgid "Page information"
+#: templates/Admin/history.tpl:17 templates/Admin/history.tpl:47
+msgid "Last 30 days"
 msgstr ""
 
-#: templates/Admin/edit.tpl:12
-msgid "Content"
+#: templates/Admin/history.tpl:42
+msgid "No changes in the last 7 days!"
 msgstr ""
 
-#: templates/Admin/edit.tpl:18
-msgid "little html - school"
+#: templates/Admin/history.tpl:67
+msgid "No changes in the last 30 days!"
 msgstr ""
 
-#: templates/Admin/edit.tpl:21
-msgid "What has changed?"
+#: templates/Admin/history.tpl:92
+msgid "No pages!"
 msgstr ""
 
-#: templates/Admin/edit.tpl:25
-msgid "criticism"
+#: templates/Admin/display_page_edit.tpl:1
+msgid "Edit Display"
 msgstr ""
 
-#: templates/Admin/edit.tpl:29
-msgid "Save"
+#: templates/Admin/display_page_edit.tpl:10
+msgid "wrote about his changes:"
 msgstr ""
 
-#: templates/Admin/edit.tpl:30
-msgid "Cancel"
+#: templates/Admin/display_page_edit.tpl:24
+msgid "Confirm"
 msgstr ""
 
-#: templates/Admin/page_manager.tpl:7
-msgid "ID"
+#: templates/Admin/display_page_edit.tpl:25
+msgid "Refuse"
 msgstr ""
 
-#: templates/Admin/page_manager.tpl:22 templates/Admin/page_manager.tpl:25
-msgid "Mainpage"
-msgstr ""
-
-#: templates/Admin/help.tpl:3
+#: templates/Admin/help.tpl:12
 msgid ""
 "Here you can find help about this zikula module. The main idea of this modul "
 "is to make a manager of many sites with an admin adding sites, many editors, "
@@ -405,11 +461,11 @@ msgid ""
 "okay."
 msgstr ""
 
-#: templates/Admin/help.tpl:5
+#: templates/Admin/help.tpl:14
 msgid "Permissions"
 msgstr ""
 
-#: templates/Admin/help.tpl:6
+#: templates/Admin/help.tpl:15
 msgid ""
 "The administrator, adding and deleating sites has to get the Admin- Access "
 "for the Page- Zensor module. The Permissionrule shows like this: Group: The "
@@ -417,7 +473,7 @@ msgid ""
 "Permission level: \"Admin access\""
 msgstr ""
 
-#: templates/Admin/help.tpl:8
+#: templates/Admin/help.tpl:17
 msgid ""
 "The editor, eding sites has to get the Moderate- Access for the Page- Zensor "
 "module. The Permissionrule shows like this: Group: The Group of Editors for "
@@ -427,7 +483,7 @@ msgid ""
 "clip the page-id, finding in the pagemanager"
 msgstr ""
 
-#: templates/Admin/help.tpl:10
+#: templates/Admin/help.tpl:19
 msgid ""
 "The confirmator, confirming changes has to get the Edit- Access for the "
 "Page- Zensor module. The Permissionrule shows like this: Group: The Group of "
@@ -435,17 +491,17 @@ msgid ""
 "\"Edit access\""
 msgstr ""
 
-#: templates/Admin/help.tpl:12
+#: templates/Admin/help.tpl:21
 msgid "Operation"
 msgstr ""
 
-#: templates/Admin/help.tpl:13
+#: templates/Admin/help.tpl:22
 msgid ""
 "The Administrator can use the pagemanger zu create new pages by putting in a "
 "title and klicking on the green tik or to delete pages by using the rubbish."
 msgstr ""
 
-#: templates/Admin/help.tpl:15
+#: templates/Admin/help.tpl:24
 msgid ""
 "The Editor can edit his pages by using the edit button on the main site in "
 "the category \"my pages\". To explain, what has been changed, there is the "
@@ -454,36 +510,44 @@ msgid ""
 "Mainpage show, which changes are pending, and whitch changes are remarked. "
 msgstr ""
 
-#: templates/Admin/help.tpl:17
+#: templates/Admin/help.tpl:26
 msgid ""
 "The Confirmator use the edit view on the category \"changes\". In the "
 "opening view he can decide, if the changes, are ok, or not. If they aren't, "
 "he writes down, what isn't ok, to send the editor his remarks."
 msgstr ""
 
-#: templates/Admin/help.tpl:19
+#: templates/Admin/help.tpl:28
 msgid "Startmodule"
 msgstr ""
 
-#: templates/Admin/help.tpl:20
+#: templates/Admin/help.tpl:29
 msgid ""
 "To get this module as startmodule, you have to set \"PageZensor\" as "
 "startmodule. The type is \"user\" and the func is \"main\". You choose the "
 "page by choosing this page as \"Mainpage\" in the \"Page Manager\""
 msgstr ""
 
-#: templates/User/display_all.tpl:1
-msgid "All pages"
+#: templates/Admin/del_request.tpl:4
+msgid "Delete page"
 msgstr ""
 
-#: templates/User/display_page.tpl:5
-msgid "Admin page"
+#: templates/Admin/del_request.tpl:7
+msgid "Do you realy want to delete the page?"
 msgstr ""
 
-#: templates/User/display_page.tpl:8
-msgid "Last update:"
+#: templates/Admin/del_request.tpl:9
+msgid "Warning! Deleting of the page is permanently and not removable!"
 msgstr ""
 
-#: templates/User/display_page.tpl:14
-msgid "Could not find a site with this id!"
+#: templates/Admin/del_request.tpl:12
+msgid "Delete"
+msgstr ""
+
+#: templates/Admin/page_manager.tpl:15
+msgid "ID"
+msgstr ""
+
+#: templates/Admin/page_manager.tpl:30 templates/Admin/page_manager.tpl:33
+msgid "Mainpage"
 msgstr ""

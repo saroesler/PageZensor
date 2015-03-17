@@ -1,3 +1,14 @@
+<script language="javaScript">
+function Event_Key()
+{  
+  if(event.keyCode == 13)
+  {
+    alert("Entertaste gedrückt");
+    
+  }  
+}
+</script>
+
 {include file='Admin/Header.tpl' __title='Page Manager' icon='display'}
 
 <form class="z-form" method="post" action="{modurl modname='PageZensor' type='Admin' func='Pageadd'}">
@@ -16,7 +27,7 @@
 					<td>{$page->getpid()}</td>
 					<td>{$page->gettitle()}</td>
 					<td>{$page->geteditdateformatted()}</td>
-					<td><button onclick="document.getElementById('action').value = 'del'; document.getElementById('id').value = {$page->getpid()};">{img src='14_layer_deletelayer.png' modname='core' set='icons/extrasmall'}</button>
+					<td><a href="{modurl modname=PageZensor type=admin func=del_request id=$page->getpid()}" class="z-button">{img src='14_layer_deletelayer.png' modname='core' set='icons/extrasmall'}</a>
 					{if $mainpage}
 						{if $mainpage->getpid()!=$page->getpid()}
 							<button onclick="document.getElementById('action').value = 'main'; document.getElementById('id').value = {$page->getpid()};">{img src='favorites.png' modname='core' set='icons/extrasmall'} {gt text="Mainpage"}</button>
@@ -30,9 +41,9 @@
 			{/foreach}
 			<tr> 
 				<td></td>
-				<td><input type="text" name="intitle" /></td>
+				<td><input type="text" name="intitle" onKeyDown="if(event.keyCode==13) document.getElementById('add').click();"/></td>
 				<td>
-					<button onclick="document.getElementById('action').value = 'add'">{img src='button_ok.png' modname='core' set='icons/extrasmall'}</button>
+					<button id="add" onclick="document.getElementById('action').value = 'add'" autofocus=true>{img src='button_ok.png' modname='core' set='icons/extrasmall'}</button>
 					<button onclick="document.getElementById('action').value = ''">{img src='button_cancel.png' modname='core' set='icons/extrasmall'}</button>
 				</td>
 			</tr>
